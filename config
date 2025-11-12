@@ -1,0 +1,100 @@
+# This is the configuration file for Ghostty.
+#
+# This template file has been automatically created at the following
+# path since Ghostty couldn't find any existing config files on your system:
+#
+#   /Users/mike.davis/Library/Application Support/com.mitchellh.ghostty/config
+#
+# The template does not set any default options, since Ghostty ships
+# with sensible defaults for all options. Users should only need to set
+# options that they want to change from the default.
+#
+# Run `ghostty +show-config --default --docs` to view a list of
+# all available config options and their default values.
+#
+# Additionally, each config option is also explained in detail
+# on Ghostty's website, at https://ghostty.org/docs/config.
+
+# Config syntax crash course
+# ==========================
+# # The config file consists of simple key-value pairs,
+# # separated by equals signs.
+# font-family = Iosevka
+# window-padding-x = 2
+#
+# # Spacing around the equals sign does not matter.
+# # All of these are identical:
+# key=value
+# key= value
+# key =value
+# key = value
+#
+# # Any line beginning with a # is a comment. It's not possible to put
+# # a comment after a config option, since it would be interpreted as a
+# # part of the value. For example, this will have a value of "#123abc":
+# background = #123abc
+#
+# # Empty values are used to reset config keys to default.
+# key =
+#
+# # Some config options have unique syntaxes for their value,
+# # which is explained in the docs for that config option.
+# # Just for example:
+# resize-overlay-duration = 4s 200ms
+#
+#
+# CUSTOM CONFIG OPTIONS
+# =====================
+# theme = Everforest Dark - Hard
+# theme = carbonfox
+# theme = Catppuccin Mocha
+theme = Eldritch
+
+# font-family
+font-family = Iosevka NFM Medium
+font-family-bold = Iosevka NFM ExtraBold
+font-family-italic = Iosevka NFM Medium Italic
+font-family-bold-italic = Iosevka NFM ExtraBold Italic
+font-size = 18
+
+# quick terminal key binding
+keybind = global:cmd+e=toggle_quick_terminal
+
+# quick terminal options
+quick-terminal-screen = mouse
+quick-terminal-animation-duration = 0.1
+
+# shell integration
+shell-integration = zsh
+
+# shader configuration
+# custom-shader = ghostty-shaders/retro-terminal.glsl
+# custom-shader-animation = true
+custom-shader = /Users/mike.davis/Library/Application Support/com.mitchellh.ghostty/ghostty-shaders/cursor_smear.glsl
+# custom-shader = /Users/mike.davis/Library/Application Support/com.mitchellh.ghostty/ghostty-shaders/cursor_blaze.glsl
+# custom-shader = /Users/mike.davis/Library/Application Support/com.mitchellh.ghostty/ghostty-shaders/cursor_frozen.glsl
+# custom-shader = /Users/mike.davis/Library/Application Support/com.mitchellh.ghostty/ghostty-shaders/cursor_smear_gradient.glsl
+custom-shader-animation = true
+
+link-url = true
+
+mouse-hide-while-typing = true
+
+macos-titlebar-proxy-icon = visible
+macos-icon = xray
+
+title = "👻 Ghostty"
+
+keybind = cmd+h=goto_split:left
+keybind = cmd+j=goto_split:down
+keybind = cmd+k=goto_split:up
+keybind = cmd+l=goto_split:right
+
+keybind = cmd+shift+e=equalize_splits
+keybind = shift+enter=text:\x1b\r
+
+background-image = /Users/mike.davis/Desktop/custom/themes/ghostty/wallpapers/Stardew-Valley-Background-1.png
+
+background-image-opacity = 0.3
+
+background-image-fit = stretch
